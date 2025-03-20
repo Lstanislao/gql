@@ -30,10 +30,10 @@ const { Model: User, ModelTC: UserTC } = initializeModel<TUserDocument>({
 });
 
 // Agregar relaciones
-// StayElementTC.addRelation('section', {
-//   resolver: () => StaySectionTC.mongooseResolvers.dataLoader(),
+// UserTC.addRelation('shopCart', {
+//   resolver: () => UserTC.mongooseResolvers.dataLoader(),
 //   prepareArgs: {
-//     _id: (source) => source.section,
+//     _id: (source) => source.name,
 //   },
 //   projection: { section: true },
 // });
